@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Sizing</title>
+	</head>
+	<body>
+		<!-- Width -->
+		<div class="w-48 border border-blue-800 bg-red-600">Hello</div>
+		<div class="w-px border border-blue-800 bg-red-600">Hello</div>
+		<div class="w-48 border border-blue-800 bg-red-600">Hello</div>
+		<div class="w-auto border border-blue-800 bg-red-600">Hello</div>
+		<div class="w-1/2 border border-blue-800 bg-red-600">Hello</div>
+		<div class="w-2/3 border border-blue-800 bg-red-600">Hello world</div>
+		<div class="w-max border border-blue-800 bg-red-600">
+			Hello tailwind is awesome
+		</div>
+		<div class="w-min border border-blue-800 bg-red-600">
+			Hello worldgjyfj
+		</div>
+		<div class="w-fit border border-blue-800 bg-red-600">
+			Hello i am anthony
+		</div>
 
-    <!-- Percentages -->
+		<!-- Percentages -->
+		<div class="w-1/2 border border-blue-800 bg-yellow-600">Hello</div>
+		<div class="w-2/3 border border-blue-800 bg-orange-600">
+			Hello world
+		</div>
+		<!-- Width of the viewport -->
 
-    <!-- Width of the viewport -->
+		<div class="w-screen border border-blue-600 bg-orange-600">
+			Hello world
+		</div>
+		<!-- 100% of container -->
+		<div class="bg-zinc-500 text-white my-2 w-full">w-full</div>
 
-    <!-- 100% of container -->
+		<!-- min/max content -->
+		<div class="bg-emerald-500 text-white my-2 w-min">w-min</div>
+		<div class="bg-emerald-500 text-white my-2 w-max">w-max</div>
+		<!-- Arbitrary width -->
+		<div class="bg-red-500 text-white my-2 w-[300px]">300px</div>
 
-    <!-- min/max content -->
-
-    <!-- Arbitrary width -->
-
-    <!-- Max Width -->
-
-    <!-- Height (Most of the same options as widths) -->
-
-    <!-- Min Height -->
-
-    <!-- Max Height -->
-
-    <!-- Full screen height -->
-  </body>
+		<!-- Max Width -->
+		<div class="bg-gray-300 max-w-lg mx-auto">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+			perferendis incidunt nihil ullam repellendus praesentium consectetur
+			et sed distinctio, magni iusto quos repellat officiis cum dolore
+			aliquid minus esse pariatur.
+		</div>
+		<!-- Height (Most of the same options as widths) -->
+		<div class="flex items-end">
+			<div class="bg-orange-500 w-20 h-24">h-24</div>
+			<div class="bg-orange-500 w-20 h-32">h-32</div>
+			<div class="bg-orange-500 w-20 h-40">h-40</div>
+			<div class="bg-orange-500 w-20 h-48">h-48</div>
+			<div class="bg-orange-500 w-20 h-64">h-64</div>
+			<div class="bg-orange-500 w-20 h-80">h-80</div>
+		</div>
+		<!-- Min Height -->
+		<div class="h-48 bg-red-200">
+			<div class="h-24 bg-red-600 min-h-full">Tailwind is awesome</div>
+		</div>
+		<!-- Max Height -->
+		<div class="h-24 bg-orange-200">
+			<div class="h-48 bg-orange-500 max-h-full">Tailwind is awesome</div>
+		</div>
+		<!-- Full screen height -->
+		<div class="h-screen bg-blue-300">Hello</div>
+	</body>
 </html>
 
 <!-- 
